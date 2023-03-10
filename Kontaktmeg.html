@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- legger til bildet og navn -->
+  <link rel="icon" href="img/home.png" type="image/x-icon"/>
+	<title>Portfolio</title>
+  <!-- linker css filen -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+        <nav>
+          <ul>
+          <section class="home">
+            <a href="home.html">
+              <img src="img/home.png" alt="Home"/>
+            </a> </section>
+              <li><a href="Ommeg.html">Om meg</a></li>
+              <li><a href="Prosjekter.html">Prosjekter</a></li>
+              <li><div id="Kon"><a href="Kontaktmeg.html">Kontakt meg</a></div></li>
+            </ul>
+          </nav>
+	</header>
+  <!-- lager en section kalt kontext -->
+  <section class="Kontext">
+    <h1>Kontakt meg</h1>
+    </section>
+    <!-- lager en div som er kalt kont -->
+    <div class="kont">
+      <!-- legger til formspree for å sende mail til meg -->
+      <form action="https://formspree.io/f/xpznqlnw"method="POST">
+        <!-- legger til navn box -->
+          <h1 style="font-size: 2vw;">Navn:</h1>
+          <input type="text" size="19" name="Navn" placeholder="Navn" required>
+          <!-- legger til epost box -->
+          <h1 style="font-size: 2vw;">E-post:</h1>
+          <input type="email" name="email" placeholder="E-post" required>
+          <!-- legger til en meldig box der du kan skrive en melding til meg i -->
+          <h1 style="font-size: 2vw;">Melding:</h1>
+          <textarea name="Beskjed" rows="5" cols="50" placeholder="Melding"></textarea><br>
+          <!-- send knapp -->
+          <button type="submit" value="Submit">Send</button>
+          <!-- nullstill knapp -->
+          <button type="reset" value="reset">Nullstill</button>
+      </form> </section>
+    <section class="text1">
+    <div><img src="img/kontakt.png" alt="Meg"/></div>
+  </section>
+	<main>
+</main>
+</body>
+</html>

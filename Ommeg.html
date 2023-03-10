@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- legger til bildet og navn -->
+  <link rel="icon" href="img/home.png" type="image/x-icon"/>
+	<title>Portfolio</title>
+  <!-- linker css filen -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+        <nav>
+          <ul>
+          <section class="home">
+            <a href="home.html">
+              <img src="img/home.png" alt="Home"/>
+            </a> </section>
+              <li><div id="Om"><a href="Ommeg.html">Om meg</a></div></li>
+              <li><a href="Prosjekter.html">Prosjekter</a></li>
+              <li><a href="Kontaktmeg.html">Kontakt meg</a></li>
+            </ul>
+          </nav>
+	</header>
+  <section class="Omtext">
+    <h1>Om Meg</h1>
+    </section>
+    <section class="text2">
+    <h1>Jeg heter kevin<br>Jeg liker å programmere,men video spill er mere min stil!<br>
+    Jeg har vært interessert i programmering<br> fra da jeg var 12 og jeg syns jeg tar det opp bra.
+    <br>Jeg hadde programmering<br>alle 3 årene på ungdomskolen.</h1>
+    <div style="z-index: 0;"><img src="img/Ommeg.PNG" alt="Meg"/></div>
+    </section>
+    <section class="omtext1">
+      <h1>Tilfeldige ting om meg:<h1><br>
+      <h2>Elsker vann<br>
+        Spiller bord tennis i fritiden<br>
+        Spiller DND i fritiden<br>
+        Elsker gaming<br>
+        Trener for å bli sterkere<br>
+        Liker ananas på pizza<br>
+        Jeg vil ha luffy’s observation haki(fra en serie, one piece)<br>
+        Jeg er takknemlig for å ha en ostehøvel<br>
+        Burger veldig godt<br>
+        Jeg vil bo alene(skrike på folk på internett uten at andre kan høre meg)
+        </h2>
+    </section>
+    
+    <!-- legger til en div som styler canvasen myChart -->
+    <div style="position: relative; z-index: 5; height: 20vw; width: 29vw; float: left; margin-left: 70vw;
+    margin-bottom: 0vw; margin-top: -35vw;">
+      <canvas id="myChart"></canvas>
+    <!-- linker til en javascript chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- legger til charten, med hva jeg er god på -->
+    <script>
+      const ctx = document.getElementById('myChart');
+    
+      new Chart(ctx, {
+        type: 'pie',
+        data: {
+          labels: ['Sammarbeid', 'Tålmodighet', 'HTML', 'CSS', 'PHP', 'PYTHON', "Vann drikking"],
+          datasets: [{
+            label: '%',
+            data: [80, 40, 65, 70, 60, 91, 100],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    </script>   </div>
+	<main>
+</main>
+</body>
+</html>
